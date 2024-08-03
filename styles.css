@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Viga", sans-serif;
+  }
+  
+  header {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .navigation {
+    width: 100%;
+    margin-top: 25px;
+    position: absolute;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding: 0 20px; /* Adiciona padding para garantir que o conteúdo não encoste nas bordas */
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .nav-list {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px; /* Espaçamento entre links */
+  }
+  
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 3px;
+    background: white;
+    transition: 0.4s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .main-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Garante que o conteúdo não saia da tela */
+  }
+  
+  .text-section {
+    position: relative;
+    width: 35%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding: 130px 50px 0;
+    box-shadow: 30px 0 30px 0 black;
+    z-index: 1;
+  }
+  
+  .text-content {
+    color: #dedede;
+    width: 100%;
+  }
+  
+  .subtitle {
+    padding: 5px 0;
+    letter-spacing: 3px;
+    color: rgb(155, 235, 155);
+  }
+  
+  .headline {
+    font-size: 4.5vw;
+    line-height: 3.5rem;
+    color: rgb(155, 235, 155);
+  }
+  
+  .coming-soon {
+    margin-top: 20px;
+    color: rgb(155, 235, 155);
+  }
+  
+  .button-group {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas menores */
+  }
+  
+  .button {
+    margin: 10px; /* Espaçamento entre botões */
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block; /* Garante que os botões se comportem bem em linha */
+  }
+  
+  .button-primary {
+    color: black;
+    background: white;
+  }
+  
+  .button-secondary {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s;
+  }
+  
+  .button-secondary i {
+    margin-right: 5px;
+  }
+  
+  .button-secondary:hover {
+    color: black;
+    background: white;
+  }
+  
+  .image-section {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    background-image: url('img1.jpg'); /* Imagem padrão */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Media Queries para dispositivos móveis e tablets */
+  @media (max-width: 768px) {
+    .image-section {
+      background-image: url('img.jpg'); /* Imagem para tablets e dispositivos móveis */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-section {
+      background-image: url('img.jpg'); /* Imagem para smartphones */
+    }
+  }
+  
+  .sidebar {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    right: 0;
+    background: black;
+    box-shadow: -30px 0 30px 0 black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; /* Adiciona padding vertical */
+  }
+  
+  .search-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-button {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+  .scroll-arrow {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .sidebar-text {
+    color: white;
+    font-size: 10px;
+    transform: translateX(6px) rotateZ(270deg);
+    transform-origin: bottom;
+    /
+  }
+  .Rodape {
+    color: white;
+    text-align: center;
+    background-color: black;
+    
+  }
+  .Rodape:hover {
+    color: green;
+  }
